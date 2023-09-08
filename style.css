@@ -204,7 +204,7 @@ main {
     margin-top: 15px;
     height: 100%;
     width: 100%;
-    z-index: -9;
+/* //////////////////// This Was the issue to your problem: z-index: -9 */
     font-size: 7px;
 }
 
@@ -345,8 +345,12 @@ i {
     color: #0b57d0;
 }
 
-.mail-info > div:first-child:hover {
+.mail-info > div:hover {
     background: rgba(0, 0, 0, 0.03);
     cursor: pointer;
 }
+/* 
+.hoverEffect:hover {
+    background-color: #0b57d0 !important;
+} */
 
