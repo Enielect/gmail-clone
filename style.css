@@ -30,6 +30,7 @@ body {
     width: 140px;
     background: #c2e7ff;
     text-align: center;
+    transition: all 0.2s linear;
     margin-bottom: 10px;
 }
 
@@ -41,6 +42,10 @@ body {
     margin-right: 15px;
     background-image: url('icons/pen.png');
     background-size: cover;
+}
+
+.compose-button button:hover {
+    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.19);
 }
 
 ul {
@@ -318,7 +323,7 @@ i {
     color: rgba(0,0,0,0.5);
 }
 
-.forum{
+.forum {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -338,5 +343,10 @@ i {
 
 .mail-info > div:first-child i, .mail-info > div:first-child a {
     color: #0b57d0;
+}
+
+.mail-info > div:first-child:hover {
+    background: rgba(0, 0, 0, 0.03);
+    cursor: pointer;
 }
 
