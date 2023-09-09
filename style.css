@@ -1,356 +1,380 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 html {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 70%;
-}
-body {
-    display: grid;
-    grid-template-columns: 230px 1fr;
-    background: #f6f8fc;
-    overflow: hidden;
-}
-.gmail-logo-container {
-    margin-bottom: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 70%;
 }
 
-.compose-button button{
-    display: flex;
-    place-items: center;
-    font-size: 14px;
-    color: black;
-    margin-left: 5px;
-    padding: 12px;
-    margin-left: 9px;
-    border: none;
-    border-radius: 18px;
-    width: 140px;
-    background: #c2e7ff;
-    text-align: center;
-    transition: all 0.2s linear;
-    margin-bottom: 10px;
+body {
+  display: grid;
+  grid-template-columns: 230px 1fr;
+  background: #f6f8fc;
+}
+
+.gmail-logo-container {
+  margin-bottom: 15px;
+}
+
+.compose-button button {
+  display: flex;
+  place-items: center;
+  font-size: 14px;
+  color: black;
+  margin-left: 5px;
+  padding: 12px;
+  margin-left: 9px;
+  border: none;
+  border-radius: 18px;
+  width: 140px;
+  background: #c2e7ff;
+  text-align: center;
+  transition: all 0.2s linear;
+  margin-bottom: 10px;
 }
 
 .compose-button button::before {
-    content: '';
-    display: block;
-    width: 30px;
-    height: 30px;
-    margin-right: 15px;
-    background-image: url('icons/pen.png');
-    background-size: cover;
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin-right: 15px;
+  background-image: url("icons/pen.png");
+  background-size: cover;
 }
 
 .compose-button button:hover {
-    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.19);
 }
 
 ul {
-    list-style-type: none;
-    font-size: 1.2rem;
+  list-style-type: none;
+  font-size: 1.2rem;
 }
 nav.left {
-    margin: 0;
-    padding: 0;
-    font-weight: lighter;
-    position: fixed;
-    width: 250px;
+  margin: 0;
+  padding: 0;
+  font-weight: lighter;
+  position: fixed;
+  width: 250px;
 }
 .gmail-logo-container {
-    font-size: 10px;
-    padding-top: 15px;
-    padding-left: 20px;
-    display: flex;
-    flex-direction: row;
-    place-items: center;
+  font-size: 10px;
+  padding-top: 15px;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: row;
+  place-items: center;
 }
 
 .gmail-logo-container :first-child {
-    margin-right: 5px;
-    margin-left: 5px;
+  margin-right: 5px;
+  margin-left: 5px;
 }
 
 .gmail-logo-container i {
-    color: rgba(0,0,0,0.7);
+  color: rgba(0, 0, 0, 0.7);
 }
 .left-list-container {
-    padding-right: 20px;
-    
+  padding-right: 20px;
 }
-.left-list-container ul li{
-    font-size: 14px;
-    padding: 8px 30px;
-    text-transform: capitalize;
+.left-list-container ul li {
+  font-size: 14px;
+  padding: 8px 30px;
+  text-transform: capitalize;
 }
 .left-list-container i {
-    padding-right: 18px;
+  padding-right: 18px;
 }
-.left-list-container ul span{
-    position: absolute;
-    right: 30px;
-    font-size: 13px;
-    /* left: 60px; */
+.left-list-container ul span {
+  position: absolute;
+  right: 30px;
+  font-size: 13px;
+  /* left: 60px; */
 }
 .left-list-container ul li:hover {
-    background: rgb(217, 232, 248);
-    border-radius: 0 25px 25px 0;
+  background: rgb(217, 232, 248);
+  border-radius: 0 25px 25px 0;
 }
 
 .left-list-container img {
-    position: relative;
-    top: 5px;
-    width: 20px;
-    margin-right: 15px;
+  position: relative;
+  top: 5px;
+  width: 20px;
+  margin-right: 15px;
 }
 
 .left-list-container svg {
-    position: relative;
-    left: -4px;
-    margin-right: 10px;
-    color: rgba(0,0,0,0.7);
+  position: relative;
+  left: -4px;
+  margin-right: 10px;
+  color: rgba(0, 0, 0, 0.7);
 }
 
 .with-svg {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 .hide {
-    
-    display: none;
-    overflow: hidden;
+  display: none;
+  overflow: hidden;
 }
 .right {
-    position: relative;
-    left: 250px;
-    display: grid;
-    align-items: center;
-    grid-template-rows: 50px 1fr;
+  position: relative;
+  left: 250px;
+  display: grid;
+  align-items: center;
+  grid-template-rows: 50px 1fr;
 }
 .search {
-    padding-top: 14px;
-    width: 700px;
-    font-size: 10px;
+  padding-top: 14px;
+  width: 700px;
+  font-size: 10px;
 }
 
 .right > nav {
-    display: flex;
-    justify-content: space-between;
-    font-size: 9px;
-    height: 70px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 9px;
+  height: 70px;
 }
 .search-bar {
-    width: 100%;
-    height: 45px;
-    border-radius: 50px;
-    position: relative;
-    top: -20px;
-    border: none;
-    background: #eaf1fb;
-    padding-left: 35px;
+  width: 100%;
+  height: 45px;
+  border-radius: 50px;
+  position: relative;
+  top: -20px;
+  border: none;
+  background: #eaf1fb;
+  padding-left: 35px;
 }
 
 .search-bar::placeholder {
-    font-size: 16px;
+  font-size: 16px;
 }
 
-
 .search-icon {
-    position: relative;
-    top: 16px;
-    left: 10px;
-    z-index: 2;
+  position: relative;
+  top: 16px;
+  left: 10px;
+  z-index: 2;
 }
 
 .filter-icon {
-    position: absolute;
-    top: 20px;
-    right: -460px;
+  position: absolute;
+  top: 20px;
+  right: -460px;
 }
 
 .options {
-    margin-top: 15px;
-    margin-right: 20px;
-    display: flex;
-    align-items: center;
-    width: 170px;
-    justify-content: space-between;
+  margin-top: 15px;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  width: 170px;
+  justify-content: space-between;
 }
 
 .google-apps-img {
-    width: 25px;
+  width: 25px;
 }
 
 .profile-image {
-    width: 33px;
-    border-radius: 50%;
+  width: 33px;
+  border-radius: 50%;
 }
 .center-container {
-    display: grid;
-    grid-template-columns: 1290px 60px;
-    height: 100%;
-    /* width: calc(100vw - 230px); */
-    width: auto;
-    /* max-width: 1350px; */
+  display: grid;
+  grid-template-columns: 1290px 60px;
+  height: 100%;
+  /* width: calc(100vw - 230px); */
+  width: auto;
+  /* max-width: 1350px; */
 }
 
-
-main {
-    /* top: 10px; */
-    background: white;
-    border-radius: 20px;
-    margin-top: 15px;
-    height: 100%;
-    width: 100%;
-/* //////////////////// This Was the issue to your problem: z-index: -9 */
-    font-size: 7px;
+.main-info {
+  /* top: 10px; */
+  background: white;
+  border-radius: 20px;
+  margin-top: 15px;
+  height: 100%;
+  width: 100%;
+  /* //////////////////// This Was the issue to your problem: z-index: -9 */
+  font-size: 7px;
 }
 
 .right-nav {
-    margin-top: 20px;
-    width: auto;
-    z-index: 3;
-    display: grid;
-    place-items: center;
+  margin-top: 20px;
+  width: auto;
+  display: grid;
+  justify-content: center;
 }
 
 .right-nav img {
-    width: 20px;
+  width: 20px;
 }
 
 .right-nav ul {
-    margin-top: 14px;
+  margin-top: 20px;
 }
 
 .right-nav li {
-    margin-bottom: 20px;
+  margin-bottom: 35px;
 }
 
 i {
-    padding-right: 8px;
+  padding-right: 8px;
 }
 
 .first {
-    width: 100%;
-    display: flex;
-    margin-top: 18px;
-    justify-content: space-between;
-    padding-left: 15px;
-    align-items: center;
+  width: 100%;
+  display: flex;
+  margin-top: 18px;
+  justify-content: space-between;
+  padding-left: 15px;
+  align-items: center;
 }
 
 .first-left {
-    color: rgba(0,0,0,0.8);
-    display: flex;
-    margin-left: -8px;
-    align-items: center;
-    width: 140px;
-    justify-content: space-around;
+  color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  margin-left: -8px;
+  align-items: center;
+  width: 140px;
+  justify-content: space-around;
 }
 
 .first-left span:first-child {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .first-checkbox {
-    margin-right: 10px;
-    
+  margin-right: 10px;
 }
 
 .first-right {
-    font-size: 13px;
-    width: auto;
-    padding-right: 30px;
+  font-size: 13px;
+  width: auto;
+  padding-right: 30px;
 }
 
 .back-arrow {
-    margin-left: 20px;
-    color: rgba(0,0,0,0.2);
+  margin-left: 20px;
+  color: rgba(0, 0, 0, 0.2);
 }
 
 .right-arrow {
-    margin-left: 20px;
+  margin-left: 20px;
 }
 
 .mail-info {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    margin-top: 30px;
-    font-size: 15px;
-    align-items: center;
-    padding-left: 20px;
-    border-bottom: 1px solid rgba(0,0,0,0.1);
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin-top: 20px;
+  font-size: 15px;
+  align-items: center;
+  padding-left: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .mail-info > div {
-    height: 50px;
-    padding-top: 7px;
-    padding-left: 8px;
-} 
+  height: 50px;
+  padding-top: 7px;
+  padding-left: 8px;
+}
 
 .mail-info img {
-    width: 20px;
+  width: 20px;
 }
 
 .section {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .mail-info a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
 .section span {
-    color: white;
-    font-size: 13px;
-    padding: 0 4px;
-    margin-left: 5px;
+  color: white;
+  font-size: 13px;
+  padding: 0 4px;
+  margin-left: 5px;
 }
 
 .section :first-child {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 .section .extra {
-    padding-top: 5px;
-    font-size: 13px;
-    color: rgba(0,0,0,0.5);
+  padding-top: 5px;
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .forum {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .mail-info > div:last-child img {
-    margin-right: 25px;
+  margin-right: 25px;
 }
 
 /* active navigation palette */
 
 .mail-info > div:first-child {
-    color: #0b57d0;
-    border-bottom: 3px solid #0b57d0;
-    border-radius: 0 0 -4px -4px;
+  color: #0b57d0;
+  border-bottom: 3px solid #0b57d0;
+  border-radius: 0 0 -4px -4px;
 }
 
-.mail-info > div:first-child i, .mail-info > div:first-child a {
-    color: #0b57d0;
+.mail-info > div:first-child i,
+.mail-info > div:first-child a {
+  color: #0b57d0;
 }
 
 .mail-info > div:hover {
-    background: rgba(0, 0, 0, 0.03);
-    cursor: pointer;
+  background: rgba(0, 0, 0, 0.03);
+  cursor: pointer;
 }
 /* 
 .hoverEffect:hover {
     background-color: #0b57d0 !important;
 } */
 
+.complete-inbox {
+  font-size: 16px;
+}
+
+.info-arrange {
+  padding-right: 20px;
+}
+
+.complete-inbox p {
+  padding: 10px 15px;
+}
+
+.complete-inbox p:not(:first-child) {
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.info-checkbox {
+  padding-right: 10px;
+}
+
+.star-icon {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.complete-inbox p :nth-child(5) {
+  color: rgba(0, 0, 0, 0.7);
+}
