@@ -9,9 +9,9 @@ html {
 }
 
 body {
-  display: grid;
-  grid-template-columns: 230px 1fr;
   background: #f6f8fc;
+  display: flex;
+  width: 100vw;
 }
 
 .gmail-logo-container {
@@ -61,6 +61,7 @@ ul {
 nav.left {
   margin: 0;
   padding: 0;
+ 
   font-weight: lighter;
   position: fixed;
   width: 250px;
@@ -83,7 +84,11 @@ nav.left {
   color: rgba(0, 0, 0, 0.7);
 }
 .left-list-container {
-  padding-right: 20px;
+  /* padding-right: 20px; */
+}
+.left-list-container ul {
+  height: calc(100vh - 131px);
+  overflow: auto;
 }
 .left-list-container ul li {
   font-size: 14px;
@@ -131,8 +136,12 @@ nav.left {
   overflow: hidden;
 }
 .right {
+  box-sizing: border-box;
   position: relative;
+  height: 100vh;
+  overflow: hidden;
   left: 250px;
+  width: calc(100vw - 250px);
   display: grid;
   align-items: center;
   grid-template-rows: 50px 1fr;
@@ -145,6 +154,7 @@ nav.left {
 
 .right > nav {
   display: flex;
+  /* position: sticky; */
   justify-content: space-between;
   font-size: 9px;
   height: 70px;
@@ -177,9 +187,9 @@ nav.left {
 }
 
 .filter-icon {
-  position: absolute;
-  top: 20px;
-  right: -460px;
+  position: relative;
+  top: -55px;
+  left: 670px;
 }
 
 .options {
@@ -207,11 +217,9 @@ nav.left {
 
 .center-container {
   display: grid;
-  grid-template-columns: 1295px 50px;
+  grid-template-columns: 1fr 50px;
   height: 100%;
-  /* width: calc(100vw - 230px); */
   width: auto;
-  /* max-width: 1350px; */
 }
 
 .main-info {
