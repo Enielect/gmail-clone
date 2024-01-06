@@ -18,6 +18,10 @@ body {
   margin-bottom: 15px;
 }
 
+.gmail-logo-container:hover {
+  cursor: pointer;
+}
+
 .compose-button button {
   display: flex;
   place-items: center;
@@ -47,6 +51,7 @@ body {
 
 .compose-button button:hover {
   box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
 }
 
 ul {
@@ -113,6 +118,10 @@ nav.left {
   color: rgba(0, 0, 0, 0.7);
 }
 
+.left-list-container:hover {
+  cursor: pointer;
+}
+
 .with-svg {
   display: flex;
   align-items: center;
@@ -162,6 +171,11 @@ nav.left {
   z-index: 2;
 }
 
+.search-icon:hover,
+.filter-icon:hover {
+  cursor: pointer;
+}
+
 .filter-icon {
   position: absolute;
   top: 20px;
@@ -185,9 +199,15 @@ nav.left {
   width: 33px;
   border-radius: 50%;
 }
+/*////////////////*top bar changed to fixed*/
+/* .top-bar {
+  position: sticky;
+  top: -7px;
+} */
+
 .center-container {
   display: grid;
-  grid-template-columns: 1290px 60px;
+  grid-template-columns: 1295px 50px;
   height: 100%;
   /* width: calc(100vw - 230px); */
   width: auto;
@@ -218,10 +238,18 @@ nav.left {
 
 .right-nav ul {
   margin-top: 20px;
+  /*/////////////////////////marker position changed*/
+  /* position: fixed; */
 }
 
 .right-nav li {
   margin-bottom: 35px;
+}
+
+.right-nav li:hover {
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.03);
+  border-radius: 50%;
 }
 
 i {
@@ -352,10 +380,12 @@ i {
 
 .complete-inbox {
   font-size: 16px;
+  height: 570px;
+  overflow: auto;
 }
 
 .info-arrange {
-  padding-right: 20px;
+  padding-right: 10px;
 }
 
 .complete-inbox p {
@@ -363,7 +393,7 @@ i {
 }
 
 .complete-inbox p:not(:first-child) {
-  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .info-checkbox {
@@ -377,4 +407,8 @@ i {
 
 .complete-inbox p :nth-child(5) {
   color: rgba(0, 0, 0, 0.7);
+}
+
+.background-alt {
+  background: #f2f6fc;
 }

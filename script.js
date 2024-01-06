@@ -1,7 +1,6 @@
 let more = document.querySelector(".more");
 let remaining = document.querySelector(".remaining");
 
-
 more.addEventListener("click", () => {
   remaining.classList.toggle("hide");
 });
@@ -139,27 +138,28 @@ const mails = [
     messageBody:
       "- We noticed a login to your account @enielect from a new device. Was t...",
     date: "Aug 28",
-  }
+  },
 ];
 
-let inbox = document.querySelector('.complete-inbox');
+let inbox = document.querySelector(".complete-inbox");
 
-for (let ele of mails) {
+for (let ele in mails) {
   let paragraph = document.createElement("p");
   let checkbox = document.createElement("input");
   checkbox.type = "checkbox";
-  checkbox.className = 'info-checkbox'
+  checkbox.className = "info-checkbox";
   let icon = document.createElement("ion-icon");
-  icon.setAttribute('name', 'star-outline');
-  icon.className = 'star-icon';
+  icon.setAttribute("name", "star-outline");
+  icon.className = "star-icon";
   paragraph.appendChild(checkbox);
   paragraph.appendChild(icon);
-  let keys = Object.keys(ele);
+  let keys = Object.keys(mails[ele]);
   for (let i = 0; i < 4; i++) {
     let span = document.createElement("span");
     span.className = "info-arrange";
-    span.appendChild(document.createTextNode(`${ele[keys[i]]}`));
+    if (ele % 2 == 0) paragraph.classList.add("background-alt");
+    span.appendChild(document.createTextNode(`${mails[ele][keys[i]]}`));
     paragraph.appendChild(span);
   }
-  inbox.appendChild(paragraph)
+  inbox.appendChild(paragraph);
 }
